@@ -3,6 +3,7 @@ const { AuthenticationError } = require('apollo-server-express');
 const { User } = require('../models');
 const { signToken } = require('../utils/auth');
 
+// hints from lessons 'Week 21'
 const resolvers = {
     Query: {
         me: async (parent, args, context) => {
@@ -24,13 +25,13 @@ const resolvers = {
           const user = await User.findOne({ email });
     
           if (!user) {
-            throw new AuthenticationError('No user found with this email address');
+            throw new AuthenticationError('User not found. Do you have an account?');
           }
     
           const correctPw = await user.isCorrectPassword(password);
     
           if (!correctPw) {
-            throw new AuthenticationError('Incorrect credentials');
+            throw new AuthenticationError('Incorrect credentials!');
           }
     
           const token = signToken(user);
@@ -57,7 +58,7 @@ const resolvers = {
             );
             return updatedUser;
           }
-          throw new AuthenticationError('You need to be logged in!');
+          throw new AuthenticationError('Login required!');
         },
     }
 };
