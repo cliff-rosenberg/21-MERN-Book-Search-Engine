@@ -21,12 +21,13 @@ Link: [MIT License](https://opensource.org/licenses/MIT)
 
 ## Description
 
-This is a MERN stack (MongoDB, Express.js, React.js, Node.js) application that searches Google Books for a given book title, then displays the results. It has a user login function that then provides a method to save desired book titles from the search results. The internal API functions are provided through a GraphQL API using Apollo Server. 
+This is a MERN stack (MongoDB, Express.js, React.js, Node.js) application that searches Google Books for a given book title, then displays the results. It has a user login function that then provides a method to save desired book titles from the search results to the logged in user's account. The internal database API functions are provided through a GraphQL API using Apollo Server. 
 
 ## Installation
 
 No installation is required, application is hosted on Heroku:
-[]()
+
+[https://blooming-escarpment-22398.herokuapp.com/](https://blooming-escarpment-22398.herokuapp.com/)
 
 ## Screenshots
 
@@ -38,7 +39,9 @@ No installation is required, application is hosted on Heroku:
 
 ## Usage
 
-The application is hosted on Heroku: 
+The application is hosted on Heroku, click on this link: 
+
+[https://blooming-escarpment-22398.herokuapp.com/](https://blooming-escarpment-22398.herokuapp.com/)
 
 ## Credits
 
