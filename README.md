@@ -1,7 +1,7 @@
 # 21-MERN-Book-Search-Engine
 
 ## Table of Contents-
-- [MERN Book Search Engine](#MERN-book-search-engine)
+- [21-MERN-Book-Search-Engine](#21-mern-book-search-engine)
   - [Table of Contents-](#table-of-contents-)
   - [Licensing](#licensing)
   - [Description](#description)
@@ -21,7 +21,7 @@ Link: [MIT License](https://opensource.org/licenses/MIT)
 
 ## Description
 
-This is a MERN stack (MongoDB, Express.js, React.js, Node.js) application that searches Google Books for a given book title, then displays the results. It has a user login function that then provides a method to save desired book titles from the search results to the logged in user's account. The internal database API functions are provided through a GraphQL API using Apollo Server. 
+This is a MERN stack (MongoDB, Express.js, React.js, Node.js) application that searches Google Books for a given book title, then displays the results. It has a user login function that then provides a method to save desired book titles from the search results to the logged in user's account. The internal database API functions are provided through a GraphQL API using Apollo Server. Security for app is provided by JSON Web Tokens and the `jwt-decode` module for the client side.
 
 ## Installation
 
