@@ -21,23 +21,30 @@ Link: [MIT License](https://opensource.org/licenses/MIT)
 
 ## Description
 
-TODO
+This is a MERN stack (MongoDB, Express.js, React.js, Node.js) application that searches Google Books for a given book title, then displays the results. It has a user login function that then provides a method to save desired book titles from the search results. The internal API functions are provided through a GraphQL API using Apollo Server. 
 
 ## Installation
 
-TODO
+No installation is required, application is hosted on Heroku:
+[]()
 
 ## Screenshots
 
-TODO
+![screenshot1](./assets/screenshot1.png)
+
+![screenshot2](./assets/screenshot2.png)
+
+![screesnhot3](./assets/screenshot3.png)
 
 ## Usage
 
-TODO
+The application is hosted on Heroku: 
 
 ## Credits
 
-TODO
+[React.js](https://reactjs.org/) - A JavaScript library for building user interfaces
+
+[Apollo Client](https://www.apollographql.com/apollo-client) - A framework for binding data to your UI with GraphQL.
 
 ## Contributing
 
