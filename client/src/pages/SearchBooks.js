@@ -1,14 +1,15 @@
+// React setup
 import React, { useState, useEffect } from 'react';
 import { Jumbotron, Container, Col, Form, Button, Card, CardColumns } from 'react-bootstrap';
+// import the 'auth' setup
 import Auth from '../utils/auth';
-//import { saveBook, searchGoogleBooks } from '../utils/API';
+// need these to refactor code for GraphQL API
 import { saveBookIds, getSavedBookIds } from '../utils/localStorage';
-// new
 import { useMutation } from '@apollo/client';
 import { SAVE_BOOK } from '../utils/mutations';
 
 const SearchBooks = () => {
-  // create state for holding returned google api data
+  // create state for holding returned Google api data
   const [searchedBooks, setSearchedBooks] = useState([]);
   // create state for holding our search field data
   const [searchInput, setSearchInput] = useState('');
@@ -31,7 +32,7 @@ const SearchBooks = () => {
       if (!searchInput) {
         return false;
       }
-  
+      // GraphQL API uses 'fetch'
       try {
         const response = await fetch(
           `https://www.googleapis.com/books/v1/volumes?q=${searchInput}`
@@ -40,7 +41,7 @@ const SearchBooks = () => {
         if (!response.ok) {
           throw new Error('something went wrong!');
         }
-  
+        // response for 'fetch' is here
         const { items } = await response.json();
   
         const bookData = items.map((book) => ({
@@ -50,8 +51,9 @@ const SearchBooks = () => {
           description: book.volumeInfo.description,
           image: book.volumeInfo.imageLinks?.thumbnail || '',
         }));
-  
+        // save searched books to react State
         setSearchedBooks(bookData);
+        // clear the search input field
         setSearchInput('');
       } catch (err) {
         console.error(err);

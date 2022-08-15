@@ -1,7 +1,7 @@
-//import React, { useState, useEffect } from 'react';
+// React setup
 import React from 'react';
 import { Jumbotron, Container, CardColumns, Card, Button } from 'react-bootstrap';
-
+// import the 'auth' setup
 import Auth from '../utils/auth';
 import { removeBookId } from '../utils/localStorage';
 // need these to refactor for GraphQL API
@@ -26,10 +26,14 @@ const SavedBooks = () => {
     // new code
     try {
     const response = await removeBook({ variables: { bookId } });
-        console.log(response);
+        console.log('Deleted record: ', response);
+        if (error) {
+          console.log(error);
+        }
       // also remove from Localstorage
       removeBookId(bookId);
     } catch (err) {
+      // display any caught errors here
         console.error(err);
     }
   };
