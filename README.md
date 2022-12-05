@@ -25,9 +25,7 @@ This is a MERN stack (MongoDB, Express.js, React.js, Node.js) application that s
 
 ## Installation
 
-No installation is required, application is hosted on Heroku:
-
-[https://blooming-escarpment-22398.herokuapp.com/](https://blooming-escarpment-22398.herokuapp.com/)
+NOTE: As of November 2022, Heroku has no "free" accounts, so the demo application has been taken offline until another suitable host can be found.
 
 ## Screenshots
 
@@ -39,9 +37,7 @@ No installation is required, application is hosted on Heroku:
 
 ## Usage
 
-The application is hosted on Heroku, click on this link: 
-
-[https://blooming-escarpment-22398.herokuapp.com/](https://blooming-escarpment-22398.herokuapp.com/)
+As of November 2022, Heroku has no "free" accounts, so the demo application has been taken offline until another suitable host can be found.
 
 ## Credits
 
